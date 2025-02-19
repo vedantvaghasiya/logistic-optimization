@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Logistics Route Optimizer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h2>Logistics Route Optimization</h2>
+    <div class="container">
+        <label for="start">Start City:</label>
+        <input type="text" id="start" placeholder="Enter start city">
+        <label for="end">End City:</label>
+        <input type="text" id="end" placeholder="Enter end city">
+        <label for="cost">Cost:</label>
+        <input type="number" id="cost" placeholder="Enter cost">
+        <label for="time">Time (hh:mm:ss):</label>
+        <input type="text" id="time" placeholder="Enter time (hh:mm:ss)">
+        <button id="addData">Enter Data</button>
+        <div class="button-container">
+            <button onclick="findOptimalRoute('cost')">Find Minimum Cost Route</button>
+            <button onclick="findOptimalRoute('time')">Find Minimum Time Route</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
